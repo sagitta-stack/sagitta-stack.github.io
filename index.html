@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sagitta</title>
+<meta name="description" content="One language, one straight line through the whole stack: Dart on the server, SSR, web, and mobile.">
+<style>
+  :root { --accent: #4f46e5; --bg: #fafaf9; --fg: #1c1917; --muted: #57534e; --card: #ffffff; --border: #e7e5e4; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0c0a09; --fg: #fafaf9; --muted: #a8a29e; --card: #1c1917; --border: #292524; }
+  }
+  * { margin: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--fg); font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 60rem; margin: 0 auto; padding: 4rem 1.5rem; }
+  .latin { color: var(--accent); font-style: italic; letter-spacing: 0.02em; }
+  h1 { font-size: clamp(2.4rem, 6vw, 3.6rem); line-height: 1.1; margin: 0.5rem 0 1rem; }
+  .tagline { font-size: 1.2rem; color: var(--muted); max-width: 44rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1rem; margin: 3rem 0; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1.1rem 1.25rem; }
+  .card h3 { font-size: 1rem; margin-bottom: 0.35rem; }
+  .card p { font-size: 0.92rem; color: var(--muted); }
+  .rule { height: 3px; width: 4rem; background: var(--accent); border-radius: 2px; margin: 1.5rem 0 0; }
+  footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.9rem; display: flex; gap: 1.5rem; flex-wrap: wrap; }
+  a { color: var(--accent); text-decoration: none; } a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<main>
+  <div class="latin">sagitta — the arrow; a constellation</div>
+  <h1>Sagitta</h1>
+  <p class="tagline">One language, one straight line through the whole stack: Dart on the server, SSR, web, and mobile.</p>
+  <div class="rule"></div>
+  <div class="grid">
+<div class="card"><h3>One binary, whole stack</h3><p>A single Dart executable serves HTTP, WebSockets, SSR pages, and Flutter web bundles.</p></div>
+<div class="card"><h3>Isolate per connection</h3><p>Phoenix-shaped: every WebSocket peer gets a fresh Dart isolate, with a cross-isolate EventBus fan-out.</p></div>
+<div class="card"><h3>Jaspr SSR</h3><p>Server-side rendered public pages in the same language as the client.</p></div>
+<div class="card"><h3>Flutter everywhere</h3><p>Desktop web SPA and mobile-optimized bundles from one codebase.</p></div>
+<div class="card"><h3>Hot deploy</h3><p>VM-service hot reload across every running isolate, no restart.</p></div>
+<div class="card"><h3>Typed end to end</h3><p>Server, wire messages, and clients share static types — no serialization drift.</p></div>
+  </div>
+  <footer>
+    <a href="https://github.com/sagitta-stack">GitHub org</a>
+    <a href="https://github.com/sagitta-stack/dart-server">Server repository</a>
+    <span>© 2026 Sagitta</span>
+  </footer>
+</main>
+</body>
+</html>
